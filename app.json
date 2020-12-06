@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "supera-challenge",
-    "slug": "supera-challenge",
+    "name": "Store",
+    "slug": "Store",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,9 +21,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/splash.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#fff"
-      }
+      },
+      "package": "com.maark007.superachallenge"
     },
     "web": {
       "favicon": "./assets/icon.png"
