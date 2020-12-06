@@ -36,8 +36,7 @@ export const ProductDetails = styled.View`
   width: 100%;
   height: 270px;
   background: #fff;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 50px;
 `;
 
 export const HeaderContent = styled.View`
@@ -55,7 +54,7 @@ export const ImageContent = styled.View`
 export const TitleBox = styled.View`
   align-items: center;
   justify-content: center;
-  padding: 25px 16px 0 16px;
+  padding: 25px 10px 0 10px;
   text-align: center;
 `;
 
@@ -90,13 +89,6 @@ export const RateTitle = styled.Text`
   margin-right: 5px;
 `;
 
-export const DescriptionTitle = styled.Text`
-  color: #000;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-`;
-
 export const ButtonBox = styled.View`
   width: 100%;
   align-items: center;
@@ -108,7 +100,7 @@ export const Button = styled.TouchableOpacity`
   width: 150px;
   border-radius: 10px;
   height: 45px;
-  border: 1px solid #0009;
+  border: 1px solid #000;
   align-items: center;
   justify-content: center;
 `;

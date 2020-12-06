@@ -49,5 +49,5 @@ export const Subtitle = styled.Text`
 export const MenuContent = styled.View`
   background: #fff;
   flex: 1;
-  border-top-left-radius: 35px;
+  border-top-left-radius: 50px;
 `;

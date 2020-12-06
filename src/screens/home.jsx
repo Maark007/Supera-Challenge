@@ -1,7 +1,7 @@
 import React from "react";
 
 import { View, StatusBar, TouchableOpacity } from "react-native";
-import { Feather, AntDesign } from "@expo/vector-icons";
+import { Feather } from "@expo/vector-icons";
 import {
   Body,
   Circle,
@@ -10,12 +10,12 @@ import {
   MenuContent,
   HeaderTitle,
   Subtitle,
-  UserTitle
+  UserTitle,
 } from "./styles/home";
 
 import MenuCard from "../components/menuCard";
 
-export default function Home({ navigation }) {
+export default function Home({ navigation, userName }) {
   const navigateToPaymentTab = () => {
     return navigation.navigate("Shop", {
       id: undefined,
@@ -28,13 +28,13 @@ export default function Home({ navigation }) {
         <Header>
           <View style={{ paddingTop: 20, paddingLeft: 10 }}>
             <HeaderTitle>Welcome</HeaderTitle>
-            <UserTitle>Hello, Jacob Jones</UserTitle>
+            <UserTitle>Hello, {userName}</UserTitle>
             <Subtitle>The Future of Gaming</Subtitle>
           </View>
           <View style={{ position: "relative", top: -22, right: -25 }}>
-            <Circle height={150} color="rgba(255,255,255, 0.5)">
-              <Circle height={100} color="rgba(255,255,255, 0.4)">
-                <Circle height={60} color="rgba(255,255,255, 0.2)">
+            <Circle height='150px' color={circleColors.bigCircle}>
+              <Circle height='100px' color={circleColors.mediumCircle}>
+                <Circle height='60px' color={circleColors.littleCircle}>
                   <TouchableOpacity onPress={navigateToPaymentTab}>
                     <Feather name="shopping-cart" size={24} color="#fff" />
                   </TouchableOpacity>
@@ -47,7 +47,13 @@ export default function Home({ navigation }) {
           <MenuCard navigation={navigation} />
         </MenuContent>
       </BodyContent>
-      <StatusBar barStyle="dark-content"/>
+      <StatusBar barStyle="light-content" />
     </Body>
   );
 }
+
+const circleColors = {
+  bigCircle: "rgba(255,255,255, 0.5)",
+  mediumCircle: "rgba(255,255,255, 0.3)",
+  littleCircle: "rgba(255,255,255, 0.2)",
+};

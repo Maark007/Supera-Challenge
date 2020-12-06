@@ -41,27 +41,41 @@ export const Title = styled.Text`
   text-align: center;
 `;
 
-export const Description = styled.View`
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-`;
-
 export const Header = styled.View`
-  padding: 21px 10px;
-  align-items: center;
+  padding: 10px 10px 5px 10px;
+  width: 100%;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const HeaderTitle = styled.Text`
   color: #000;
   font-weight: bold;
   font-size: 21px;
+  padding-left: 5px;
+  margin-bottom: 15px;
 `;
 
-export const Picker = styled.Picker`
-  height: 50px;
-  width: 150px;
-  border: 1px solid #000;
+export const Description = styled.View`
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5px;
+`;
+
+export const RateBox = styled.View`
+  align-items: center;
+  flex-direction: row;
+`;
+
+export const Subtitle = styled.Text`
+  color: #fff;
+  margin: 3px 0;
+`;
+
+export const PickerView = styled.View`
+  border-width: 1px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
 `;
