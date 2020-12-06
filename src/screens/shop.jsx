@@ -33,7 +33,8 @@ export default function Shop({
 
   useEffect(() => {
     if (product) {
-      setBuyedProducts((prev) => [...prev, product]);
+      if (buyedProducts.includes(product)) return;
+      return setBuyedProducts((prev) => [...prev, product]);
     }
   }, [product]);
 
