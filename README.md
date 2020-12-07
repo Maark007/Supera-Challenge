@@ -1,4 +1,4 @@
-# Supera Inovação em Tecnologia - Desafio
+# Supera Inovação em Tecnologia - Challenge
 
 ## Tools used
 
