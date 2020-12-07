@@ -1,4 +1,4 @@
-# Store App
+# Supera Inovação em Tecnologia - Desafio
 
 ## Tools used
 
